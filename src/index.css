@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.1450 0 0);
+  --color-card: oklch(0.9950 0 0);
+  --color-card-foreground: oklch(0.1450 0 0);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.1450 0 0);
+  --color-primary: oklch(0.2050 0 0);
+  --color-primary-foreground: oklch(0.9850 0 0);
+  --color-secondary: oklch(0.8700 0 0);
+  --color-secondary-foreground: oklch(0.1450 0 0);
+  --color-muted: oklch(0.9500 0 0);
+  --color-muted-foreground: oklch(0.5560 0 0);
+  --color-accent: oklch(0.9500 0 0);
+  --color-accent-foreground: oklch(0.2050 0 0);
+  --color-destructive: oklch(0.5770 0.2450 27.3250);
+  --color-destructive-foreground: oklch(1 0 0);
+  --color-border: oklch(0.9500 0 0);
+  --color-input: oklch(0.9700 0 0);
+  --color-ring: oklch(0.7080 0 0);
+  --color-success: oklch(0.6416 0.1652 142.0362);
+  --color-warning: oklch(0.8019 0.1503 82.7754);
+  --color-info: oklch(0.6598 0.1510 250.0429);
+  --radius: 1rem;
+  --font-sans: 'DM Sans', ui-sans-serif, sans-serif, system-ui;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    letter-spacing: var(--tracking-normal);
+  }
+}
